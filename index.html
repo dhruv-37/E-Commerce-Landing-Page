@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="nav-bar">
+    <div class="nav-logo">
+      sneakers
+    </div>
+    <div class="nav-menu">
+      <ul id="menu">
+        <li class="menu-item"><a href="#">Collections</a></li>
+        <li class="menu-item"><a href="#">Men</a></li>
+        <li class="menu-item"><a href="#">Women</a></li>
+        <li class="menu-item"><a href="#">About</a></li>
+        <li class="menu-item"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <div class="cart">
+        <i class='bx bx-cart-alt'></i>
+      </div>
+      <div class="badge"><p>1</p></div>
+      <div class="cart-box">
+        <div class="cart-header">Cart</div>
+        <div class="cart-main"><p>The cart is empty.</p></div>
+        <div class="product-added">
+          <div class="item-added">
+            <div class="cart-photo">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="cartPhoto">
+            </div>
+            <div class="cart-info">
+              <p>Fall Limited Edition Sneakers</p>
+              <p><span class="cost">$125</span> x <span class="quant"></span> <span class="total-cost"></span></p>
+            </div>
+            <div class="delete">
+              <i class='bx bx-trash' ></i>
+            </div>
+          </div>
+          <button id="checkout">Checkout</button>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="images/Snapinsta.app_134101708_909013286575473_5193141973269908249_n_1080.jpg" alt="profilePic">
+      </div>
+    </div>
+  </div>
+  <!-- <hr class="nav-line"> -->
+  <div class="nav-line"></div>
+  <main>
+    <div class="product-photo">
+      <div class="main-photo">
+        <img src="./images/image-product-1.jpg" alt="mainPhoto">
+      </div>
+      <div class="photo-gallery">
+        <div class="photo1">
+          <img src="./images/image-product-1.jpg" alt="photo1" class="image currImg">
+        </div>
+        <div class="photo1">
+          <img src="./images/image-product-2.jpg" alt="photo2" class="image">
+        </div>
+        <div class="photo1">
+          <img src="./images/image-product-3.jpg" alt="photo3" class="image">
+        </div>
+        <div class="photo1">
+          <img src="./images/image-product-4.jpg" alt="photo4" class="image">
+        </div>
+      </div>
+    </div>
+    <div class="product-info">
+      <p id="product-title">SNEAKERS COMPANY</p>
+      <p id="product-name">Fall Limited Edition Sneakers</p>
+      <p id="product-desc">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+      <div class="price-display">
+        <div class="main-price">
+          <p class="actual-price">$125.00</p>
+          <div class="discount">50%</div>
+        </div>
+        <p class="disc-price">$250.00</p>
+      </div>
+      <div class="product-amount">
+        <div class="amount">
+          <div class="minus">
+            <i class='bx bx-minus' ></i>
+          </div>
+          <div class="amount-val">
+            0
+          </div>
+          <div class="plus">
+            <i class='bx bx-plus' ></i>
+          </div>
+        </div>
+        <div class="add-cart">
+          <button id="add-item">
+            <i class="bx bx-cart-alt"></i>
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
